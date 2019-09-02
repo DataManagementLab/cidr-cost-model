@@ -1,7 +1,7 @@
 # DBMS Fitting: Why should we learn what we already know?
 Proof of concepts for our vision paper
 
-![Cost Estimates](/ml/plots/3d_attributes_tablesize/3d_attributes_tablesize_tuple_widths=16_selectivity=0.0_est.pdf)
+<img src="ml/plots/fitted_costs.png" width="200">
 
 ## Abstract 
 Deep Neural Networks (DNNs) have successfully been used to replace classical DBMS components such as indexes or query optimizers with learned counterparts.
