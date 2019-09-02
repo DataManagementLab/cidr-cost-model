@@ -1,0 +1,302 @@
+{
+  "meta": {
+    "numColumns": 65,
+    "numTables": 10
+  },
+  "queries": [
+    {
+      "pipeline": {
+        "operators": [
+          {
+            "input_selectivity": 5000,
+            "op_type": 0,
+            "output_selectivity": 4833,
+            "predicates": [
+              {
+                "column_id": 0,
+                "literal_normalized": 0,
+                "pred_type": 0
+              }
+            ],
+            "table_id": 1
+          },
+          {
+            "input_selectivity": 4833,
+            "join_predicates": [
+              {
+                "column_id": 0,
+                "column_id_build": 0,
+                "pipeline": {
+                  "operators": [
+                    {
+                      "input_selectivity": 10000,
+                      "op_type": 0,
+                      "output_selectivity": 5000,
+                      "predicates": [
+                        {
+                          "column_id": 0,
+                          "literal_normalized": 0,
+                          "pred_type": 4
+                        }
+                      ],
+                      "table_id": 0
+                    },
+                    {
+                      "input_selectivity": 5000,
+                      "op_type": 3,
+                      "output_selectivity": 5000,
+                      "predicates": [],
+                      "table_id": 0
+                    }
+                  ],
+                  "runtime_us": 3154
+                },
+                "pred_type": 2
+              }
+            ],
+            "op_type": 2,
+            "output_selectivity": 2417,
+            "table_id": 1
+          }
+        ],
+        "runtime_us": 1697
+      },
+      "plan_type": 1,
+      "runtime_us": 4851
+    },
+    {
+      "pipeline": {
+        "operators": [
+          {
+            "input_selectivity": 3333,
+            "op_type": 0,
+            "output_selectivity": 167,
+            "predicates": [
+              {
+                "column_id": 0,
+                "literal_normalized": 0,
+                "pred_type": 1
+              }
+            ],
+            "table_id": 2
+          },
+          {
+            "input_selectivity": 167,
+            "join_predicates": [
+              {
+                "column_id": 0,
+                "column_id_build": 2,
+                "pipeline": {
+                  "operators": [
+                    {
+                      "input_selectivity": 5000,
+                      "op_type": 0,
+                      "output_selectivity": 167,
+                      "predicates": [
+                        {
+                          "column_id": 0,
+                          "literal_normalized": 0,
+                          "pred_type": 1
+                        }
+                      ],
+                      "table_id": 1
+                    },
+                    {
+                      "input_selectivity": 167,
+                      "join_predicates": [
+                        {
+                          "column_id": 0,
+                          "column_id_build": 0,
+                          "pipeline": {
+                            "operators": [
+                              {
+                                "input_selectivity": 10000,
+                                "op_type": 0,
+                                "output_selectivity": 5000,
+                                "predicates": [
+                                  {
+                                    "column_id": 0,
+                                    "literal_normalized": 0,
+                                    "pred_type": 4
+                                  }
+                                ],
+                                "table_id": 0
+                              },
+                              {
+                                "input_selectivity": 5000,
+                                "op_type": 3,
+                                "output_selectivity": 5000,
+                                "predicates": [],
+                                "table_id": 0
+                              }
+                            ],
+                            "runtime_us": 2655
+                          },
+                          "pred_type": 2
+                        }
+                      ],
+                      "op_type": 2,
+                      "output_selectivity": 83,
+                      "table_id": 1
+                    },
+                    {
+                      "input_selectivity": 83,
+                      "op_type": 3,
+                      "output_selectivity": 83,
+                      "predicates": [],
+                      "table_id": 1
+                    }
+                  ],
+                  "runtime_us": 250
+                },
+                "pred_type": 2
+              }
+            ],
+            "op_type": 2,
+            "output_selectivity": 83,
+            "table_id": 2
+          }
+        ],
+        "runtime_us": 164
+      },
+      "plan_type": 2,
+      "runtime_us": 3069
+    },
+    {
+      "pipeline": {
+        "operators": [
+          {
+            "input_selectivity": 3333,
+            "op_type": 0,
+            "output_selectivity": 1666,
+            "predicates": [
+              {
+                "column_id": 0,
+                "literal_normalized": 0,
+                "pred_type": 4
+              }
+            ],
+            "table_id": 2
+          },
+          {
+            "input_selectivity": 1666,
+            "join_predicates": [
+              {
+                "column_id": 0,
+                "column_id_build": 5,
+                "pipeline": {
+                  "operators": [
+                    {
+                      "input_selectivity": 3333,
+                      "op_type": 0,
+                      "output_selectivity": 3166,
+                      "predicates": [
+                        {
+                          "column_id": 0,
+                          "literal_normalized": 0,
+                          "pred_type": 0
+                        }
+                      ],
+                      "table_id": 2
+                    },
+                    {
+                      "input_selectivity": 3166,
+                      "join_predicates": [
+                        {
+                          "column_id": 0,
+                          "column_id_build": 2,
+                          "pipeline": {
+                            "operators": [
+                              {
+                                "input_selectivity": 5000,
+                                "op_type": 0,
+                                "output_selectivity": 4833,
+                                "predicates": [
+                                  {
+                                    "column_id": 0,
+                                    "literal_normalized": 0,
+                                    "pred_type": 0
+                                  }
+                                ],
+                                "table_id": 1
+                              },
+                              {
+                                "input_selectivity": 4833,
+                                "join_predicates": [
+                                  {
+                                    "column_id": 0,
+                                    "column_id_build": 0,
+                                    "pipeline": {
+                                      "operators": [
+                                        {
+                                          "input_selectivity": 10000,
+                                          "op_type": 0,
+                                          "output_selectivity": 5000,
+                                          "predicates": [
+                                            {
+                                              "column_id": 0,
+                                              "literal_normalized": 0,
+                                              "pred_type": 4
+                                            }
+                                          ],
+                                          "table_id": 0
+                                        },
+                                        {
+                                          "input_selectivity": 5000,
+                                          "op_type": 3,
+                                          "output_selectivity": 5000,
+                                          "predicates": [],
+                                          "table_id": 0
+                                        }
+                                      ],
+                                      "runtime_us": 2580
+                                    },
+                                    "pred_type": 2
+                                  }
+                                ],
+                                "op_type": 2,
+                                "output_selectivity": 2417,
+                                "table_id": 1
+                              },
+                              {
+                                "input_selectivity": 2417,
+                                "op_type": 3,
+                                "output_selectivity": 2417,
+                                "predicates": [],
+                                "table_id": 1
+                              }
+                            ],
+                            "runtime_us": 1923
+                          },
+                          "pred_type": 2
+                        }
+                      ],
+                      "op_type": 2,
+                      "output_selectivity": 1583,
+                      "table_id": 2
+                    },
+                    {
+                      "input_selectivity": 1583,
+                      "op_type": 3,
+                      "output_selectivity": 1583,
+                      "predicates": [],
+                      "table_id": 2
+                    }
+                  ],
+                  "runtime_us": 1257
+                },
+                "pred_type": 2
+              }
+            ],
+            "op_type": 2,
+            "output_selectivity": 1583,
+            "table_id": 2
+          }
+        ],
+        "runtime_us": 768
+      },
+      "plan_type": 3,
+      "runtime_us": 6528
+    }
+  ]
+}
