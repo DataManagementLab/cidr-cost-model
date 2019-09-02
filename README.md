@@ -11,3 +11,6 @@ In this paper, we propose an alternative approach to learn DBMS components.
 Instead of relying on DNNs, we propose to leverage the idea of differentiable programming to fit DBMS components instead of learning their behavior from scratch.
 Differentiable programming is a recent shift in machine learning away from the direction taken by DNNs towards simpler models that take advantage of the problem structure.
 In a case study we analyze and discuss how to fit a model to estimate the cost of a query plan and present initial experimental results that show the potential of our approach.
+
+## Reproduce Experiments
+A detailed description is provided in our [Readme](ml/README.md).
